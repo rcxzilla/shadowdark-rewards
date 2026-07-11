@@ -1,0 +1,1012 @@
+/* ========================================== */
+/* THEME VARIABLES                            */
+/* Controlled by the "Popup Theme" world       */
+/* setting - see settings.js                  */
+/* ========================================== */
+
+:root {
+    --award-bg: #171319;
+    --award-box-border: #43384a;
+    --award-legend: #d1c8c1;
+    --award-text: #d1c8c1;
+    --award-text-bright: #f2ece4;
+    --award-text-muted: #9a8e9e;
+    --award-btn-bg: #251f29;
+    --award-btn-border: #43384a;
+    --award-btn-hover-bg: #392f40;
+    --award-btn-hover-border: #63536d;
+    --award-btn-text: #d1c8c1;
+    --award-input-bg: #0f0d11;
+    --award-input-border: #43384a;
+    --award-input-focus-border: #7b6787;
+    --award-avatar-border: #43384a;
+    --award-avatar-bg: #0f0d11;
+    --award-card-bg: #251f29;
+    --award-card-hover-bg: #2c2530;
+    --award-title-color: #ffffff;
+    --award-header-border: #302836;
+}
+
+.award-theme-light {
+    --award-bg: #f2ede0;
+    --award-box-border: #c9bfa0;
+    --award-legend: #6b5a3a;
+    --award-text: #3a3226;
+    --award-text-bright: #241f18;
+    --award-text-muted: #7a6f5c;
+    --award-btn-bg: #e6ddc8;
+    --award-btn-border: #c9bfa0;
+    --award-btn-hover-bg: #d8cbac;
+    --award-btn-hover-border: #a8956a;
+    --award-btn-text: #3a3226;
+    --award-input-bg: #ffffff;
+    --award-input-border: #c9bfa0;
+    --award-input-focus-border: #a8956a;
+    --award-avatar-border: #c9bfa0;
+    --award-avatar-bg: #ffffff;
+    --award-card-bg: #e6ddc8;
+    --award-card-hover-bg: #d8cbac;
+    --award-title-color: #241f18;
+    --award-header-border: #c9bfa0;
+}
+
+.award-theme-dark {
+    --award-bg: #121212;
+    --award-box-border: #3a3a3a;
+    --award-legend: #d8d8d8;
+    --award-text: #cfcfcf;
+    --award-text-bright: #f5f5f5;
+    --award-text-muted: #8c8c8c;
+    --award-btn-bg: #1e1e1e;
+    --award-btn-border: #3a3a3a;
+    --award-btn-hover-bg: #2a2a2a;
+    --award-btn-hover-border: #555555;
+    --award-btn-text: #cfcfcf;
+    --award-input-bg: #0a0a0a;
+    --award-input-border: #3a3a3a;
+    --award-input-focus-border: #666666;
+    --award-avatar-border: #3a3a3a;
+    --award-avatar-bg: #0a0a0a;
+    --award-card-bg: #1e1e1e;
+    --award-card-hover-bg: #262626;
+    --award-title-color: #ffffff;
+    --award-header-border: #3a3a3a;
+}
+
+.award-theme-blackgold {
+    --award-bg: #0b0b0b;
+    --award-box-border: #8a6d1f;
+    --award-legend: #d4af37;
+    --award-text: #e8dcc0;
+    --award-text-bright: #f4e6bd;
+    --award-text-muted: #a08a5a;
+    --award-btn-bg: #161311;
+    --award-btn-border: #8a6d1f;
+    --award-btn-hover-bg: #241f18;
+    --award-btn-hover-border: #d4af37;
+    --award-btn-text: #e8dcc0;
+    --award-input-bg: #0a0806;
+    --award-input-border: #8a6d1f;
+    --award-input-focus-border: #d4af37;
+    --award-avatar-border: #8a6d1f;
+    --award-avatar-bg: #0a0806;
+    --award-card-bg: #161311;
+    --award-card-hover-bg: #241f18;
+    --award-title-color: #d4af37;
+    --award-header-border: #8a6d1f;
+}
+
+/* Verdant - mossy dungeon greens */
+.award-theme-verdant {
+    --award-bg: #0f1810;
+    --award-box-border: #35502e;
+    --award-legend: #8fbf6a;
+    --award-text: #c7d9bb;
+    --award-text-bright: #eaf5df;
+    --award-text-muted: #7c9270;
+    --award-btn-bg: #16240f;
+    --award-btn-border: #35502e;
+    --award-btn-hover-bg: #23371c;
+    --award-btn-hover-border: #5c8a49;
+    --award-btn-text: #c7d9bb;
+    --award-input-bg: #0a120a;
+    --award-input-border: #35502e;
+    --award-input-focus-border: #6fa050;
+    --award-avatar-border: #35502e;
+    --award-avatar-bg: #0a120a;
+    --award-card-bg: #16240f;
+    --award-card-hover-bg: #1d2f15;
+    --award-title-color: #a8d98a;
+    --award-header-border: #263a1f;
+}
+
+/* Blood - crimson danger */
+.award-theme-blood {
+    --award-bg: #150808;
+    --award-box-border: #5c1f1f;
+    --award-legend: #d15b5b;
+    --award-text: #dcc2c2;
+    --award-text-bright: #f5e0e0;
+    --award-text-muted: #8f6060;
+    --award-btn-bg: #200d0d;
+    --award-btn-border: #5c1f1f;
+    --award-btn-hover-bg: #341313;
+    --award-btn-hover-border: #8a2e2e;
+    --award-btn-text: #dcc2c2;
+    --award-input-bg: #0d0505;
+    --award-input-border: #5c1f1f;
+    --award-input-focus-border: #a83a3a;
+    --award-avatar-border: #5c1f1f;
+    --award-avatar-bg: #0d0505;
+    --award-card-bg: #200d0d;
+    --award-card-hover-bg: #2a1010;
+    --award-title-color: #e05c5c;
+    --award-header-border: #3a1515;
+}
+
+/* Arcane - mystic violet */
+.award-theme-arcane {
+    --award-bg: #0e0b1c;
+    --award-box-border: #3d3170;
+    --award-legend: #9d84e8;
+    --award-text: #c9c2e6;
+    --award-text-bright: #ece7fa;
+    --award-text-muted: #7c72a3;
+    --award-btn-bg: #171130;
+    --award-btn-border: #3d3170;
+    --award-btn-hover-bg: #221a45;
+    --award-btn-hover-border: #6a53c4;
+    --award-btn-text: #c9c2e6;
+    --award-input-bg: #0a0716;
+    --award-input-border: #3d3170;
+    --award-input-focus-border: #8069d6;
+    --award-avatar-border: #3d3170;
+    --award-avatar-bg: #0a0716;
+    --award-card-bg: #171130;
+    --award-card-hover-bg: #1e1740;
+    --award-title-color: #b39ef0;
+    --award-header-border: #2a2154;
+}
+
+/* Frost - icy slate blue */
+.award-theme-frost {
+    --award-bg: #0a141c;
+    --award-box-border: #2c4a5e;
+    --award-legend: #7ec8e3;
+    --award-text: #c2dbe6;
+    --award-text-bright: #e6f4fa;
+    --award-text-muted: #6c8e9c;
+    --award-btn-bg: #0f202c;
+    --award-btn-border: #2c4a5e;
+    --award-btn-hover-bg: #163244;
+    --award-btn-hover-border: #4a7d96;
+    --award-btn-text: #c2dbe6;
+    --award-input-bg: #060e14;
+    --award-input-border: #2c4a5e;
+    --award-input-focus-border: #5fa8c4;
+    --award-avatar-border: #2c4a5e;
+    --award-avatar-bg: #060e14;
+    --award-card-bg: #0f202c;
+    --award-card-hover-bg: #133040;
+    --award-title-color: #9fdcf0;
+    --award-header-border: #1b3542;
+}
+
+/* ========================================== */
+/* DIALOG THEME & LAYOUT                      */
+/* ========================================== */
+
+.seq-theme-dialog.app { 
+    background: var(--award-bg) !important; 
+    border-radius: 5px; 
+    border: 1px solid #000; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.8); 
+}
+
+.seq-theme-dialog .window-content { 
+    background: var(--award-bg) !important; 
+    color: var(--award-text); 
+    padding: 10px; 
+    overflow: visible !important; 
+    max-height: none !important; 
+}
+
+.seq-theme-dialog .window-header { 
+    border-bottom: 1px solid var(--award-header-border); 
+    color: var(--award-text); 
+}
+
+/* ========================================== */
+/* COMPONENTS & CONTAINERS                    */
+/* ========================================== */
+
+.seq-box { 
+    border: 1px solid var(--award-box-border); 
+    border-radius: 4px; 
+    padding: 10px; 
+    margin: 0 0 10px 0; 
+    background: transparent; 
+}
+
+.seq-box-no-margin {
+    margin-bottom: 0;
+}
+
+.seq-box legend { 
+    font-size: 0.85em; 
+    color: var(--award-legend); 
+    padding: 0 6px; 
+    width: auto; 
+    border: none; 
+    margin: 0; 
+}
+
+/* ========================================== */
+/* GRIDS & LAYOUTS                            */
+/* ========================================== */
+
+.seq-dialog-layout {
+    display: flex; 
+    align-items: stretch; 
+    gap: 10px; 
+    margin-bottom: 5px;
+}
+
+.luck-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px; 
+}
+
+.actions-grid, .manual-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px; 
+}
+
+/* ========================================== */
+/* CHARACTER INFO                             */
+/* ========================================== */
+
+.char-box { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px; 
+    flex-grow: 1; 
+}
+
+.char-avatar {
+    width: 115px; 
+    height: 115px; 
+    border: 1px solid var(--award-avatar-border); 
+    border-radius: 5px; 
+    object-fit: cover; 
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.char-avatar:hover {
+    border-color: var(--award-btn-hover-border);
+}
+
+.char-info { 
+    font-size: 0.85em; 
+    color: var(--award-text-muted); 
+    line-height: 1.4; 
+}
+
+.char-info span { 
+    color: var(--award-text); 
+}
+
+.char-name { 
+    font-size: 1.3em; 
+    color: var(--award-text-bright); 
+    display: block; 
+    margin: 0 0 4px 0; 
+    font-weight: bold; 
+    line-height: 1.2; 
+}
+
+/* ========================================== */
+/* VALUES & DISPLAYS                          */
+/* ========================================== */
+
+.luck-display { 
+    text-align: center; 
+    min-width: 130px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.luck-val, .xp-val { 
+    font-size: 3.5em; 
+    font-weight: bold; 
+    color: var(--award-text-bright); 
+    line-height: 1; 
+    margin-top: 5px;
+}
+
+/* ========================================== */
+/* BUTTONS & INPUTS                           */
+/* ========================================== */
+
+.luck-btn { 
+    cursor: pointer; 
+    padding: 5px; 
+    text-align: center; 
+    border: 1px solid var(--award-btn-border); 
+    background: var(--award-btn-bg); 
+    border-radius: 3px; 
+    color: var(--award-btn-text); 
+    font-size: 0.9em; 
+    transition: all 0.2s ease-in-out; 
+}
+
+.luck-btn:hover { 
+    background: var(--award-btn-hover-bg); 
+    border-color: var(--award-btn-hover-border); 
+    color: var(--award-text-bright); 
+}
+
+.btn-manual {
+    color: #6da373; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.btn-undo {
+    color: #c99355; 
+    font-weight: bold;
+}
+
+.btn-reset {
+    color: #c45b5b; 
+    font-weight: bold;
+}
+
+.seq-input { 
+    width: 100%; 
+    background: var(--award-input-bg); 
+    border: 1px solid var(--award-input-border); 
+    color: var(--award-text); 
+    text-align: center; 
+    font-size: 1.1em; 
+    padding: 4px; 
+    border-radius: 3px; 
+    height: 100%; 
+    box-sizing: border-box; 
+}
+
+.seq-input:focus { 
+    outline: none; 
+    border-color: var(--award-input-focus-border); 
+}
+
+/* ========================================== */
+/* LIGHT TRACKER                              */
+/* ========================================== */
+
+#custom-light-source-tracker.light-tracker-app.app {
+    background: var(--award-bg) !important;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+#custom-light-source-tracker.light-tracker-app .window-content {
+    background: var(--award-bg) !important;
+    color: var(--award-text);
+    padding: 10px;
+}
+
+#custom-light-source-tracker.light-tracker-app .window-header {
+    border-bottom: 1px solid var(--award-header-border);
+    color: var(--award-text);
+}
+
+/* Status pill - border/background derive from the text color via currentColor */
+#custom-light-source-tracker .lt-status-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid currentColor;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+#custom-light-source-tracker .lt-status-pill.lt-status-active {
+    color: #6da373;
+    background: rgba(109, 163, 115, 0.12);
+}
+
+#custom-light-source-tracker .lt-status-pill.lt-status-active:hover {
+    background: rgba(109, 163, 115, 0.22);
+}
+
+#custom-light-source-tracker .lt-status-pill.lt-status-paused {
+    color: #c45b5b;
+    background: rgba(196, 91, 91, 0.12);
+}
+
+#custom-light-source-tracker .lt-status-pill.lt-status-paused:hover {
+    background: rgba(196, 91, 91, 0.22);
+}
+
+#custom-light-source-tracker .lt-actor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#custom-light-source-tracker .lt-empty {
+    text-align: center;
+    color: var(--award-text-muted);
+    padding: 10px;
+}
+
+#custom-light-source-tracker .lt-actor-panel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    background: var(--award-card-bg);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#custom-light-source-tracker .lt-actor-avatar {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 5px !important;
+    border: 2px solid var(--award-avatar-border) !important;
+    margin-right: 15px;
+    overflow: hidden !important;
+    background: var(--award-avatar-bg);
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#custom-light-source-tracker .lt-actor-avatar:hover {
+    border-color: var(--award-btn-hover-border) !important;
+}
+
+#custom-light-source-tracker .lt-actor-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#custom-light-source-tracker .lt-actor-info {
+    flex-grow: 1;
+}
+
+#custom-light-source-tracker .lt-actor-name-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0 5px 0;
+}
+
+#custom-light-source-tracker .lt-actor-name {
+    margin: 0 !important;
+    color: var(--award-text-bright);
+    border-bottom: none !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#custom-light-source-tracker .lt-time-badge {
+    color: #6da373;
+    font-size: 1.3em;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+#custom-light-source-tracker .lt-time-badge.lt-time-low {
+    color: #c45b5b;
+}
+
+#custom-light-source-tracker .lt-light-item {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#custom-light-source-tracker .lt-light-name {
+    color: #c99355;
+}
+
+#custom-light-source-tracker .lt-light-name i {
+    margin-right: 4px;
+}
+
+#custom-light-source-tracker .lt-light-remaining {
+    color: var(--award-text-muted);
+    font-weight: bold;
+}
+
+#custom-light-source-tracker .lt-light-remaining.lt-light-low {
+    color: #c45b5b;
+}
+
+#custom-light-source-tracker .lt-no-lights {
+    font-size: 13px;
+    color: var(--award-text-muted);
+    font-style: italic;
+}
+
+/* ========================================== */
+/* POPUP TITLES                               */
+/* ========================================== */
+
+/* If you add the actual JSL Blackletter font file to a "fonts" folder in
+   this module (see module.json), this @font-face will load it. Until then,
+   or if it's missing, the titles below fall back to a plain serif font. */
+@font-face {
+    font-family: "JSL Blackletter";
+    src: url("fonts/JSLBlackletter.ttf") format("truetype"),
+         url("fonts/JSLBlackletter.woff2") format("woff2"),
+         url("fonts/JSLBlackletter.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.popup-title {
+    font-family: "JSL Blackletter", serif;
+    color: var(--award-title-color);
+    text-align: center;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    margin: 12px 0 16px 0;
+}
+
+/* ========================================== */
+/* AWARD ACTOR GRID (shared by Luck & XP)                      */
+/* ========================================== */
+
+.award-actor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.award-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--award-text-muted);
+    padding: 10px;
+}
+
+.award-actor-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--award-card-bg);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    min-width: 0;
+    transition: border-color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.award-actor-card:hover {
+    background: var(--award-card-hover-bg);
+}
+
+.award-actor-card.selected {
+    border-color: #6da373;
+    box-shadow: 0 0 6px rgba(109, 163, 115, 0.5);
+}
+
+.award-actor-avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 5px;
+    border: 2px solid var(--award-avatar-border);
+    overflow: hidden;
+    background: var(--award-avatar-bg);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.award-actor-avatar:hover {
+    border-color: var(--award-btn-hover-border);
+}
+
+.award-actor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.award-actor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.award-actor-name {
+    font-weight: bold;
+    color: var(--award-text-bright);
+    font-size: 0.95em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.award-actor-line {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.award-actor-value {
+    color: var(--award-text-muted);
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+/* G:/S:/C: labels always match their currency's color from Add Currency */
+.award-actor-currency-label-gp {
+    color: #d4af37;
+}
+
+.award-actor-currency-label-sp {
+    color: #c7c9cb;
+}
+
+.award-actor-currency-label-cp {
+    color: #b87333;
+}
+
+/* ========================================== */
+/* AWARD DIALOG (XP + Luck + Treasure combo)  */
+/* ========================================== */
+
+.award-toggle-btn.active {
+    background: var(--award-btn-hover-bg);
+    border-color: #6da373;
+    color: var(--award-text-bright);
+}
+
+.award-options-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Panels fade + collapse smoothly instead of an abrupt jQuery slide */
+.award-panel {
+    overflow: hidden;
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+.award-panel.collapsed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.award-panel .seq-box:last-child {
+    margin-bottom: 0;
+}
+
+.currency-top-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.currency-add-col {
+    flex: 1.5;
+    min-width: 0;
+}
+
+.currency-manual-col {
+    flex: 1;
+    min-width: 0;
+}
+
+.currency-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.currency-btn {
+    font-size: 0.9em;
+    padding: 6px 4px;
+    font-weight: bold;
+}
+
+.currency-btn[data-currency="cp"] {
+    color: #b87333;
+}
+
+.currency-btn[data-currency="sp"] {
+    color: #c7c9cb;
+}
+
+.currency-btn[data-currency="gp"] {
+    color: #d4af37;
+}
+
+.currency-manual-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "cp btn"
+        "sp btn"
+        "gp btn";
+    gap: 6px;
+}
+
+#award-currency-cp {
+    grid-area: cp;
+}
+
+#award-currency-sp {
+    grid-area: sp;
+}
+
+#award-currency-gp {
+    grid-area: gp;
+}
+
+.currency-manual-submit {
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 14px;
+}
+
+.treasure-dropzone {
+    position: relative;
+    height: auto;
+    max-height: 300px;
+    box-sizing: border-box;
+    border: 2px dashed var(--award-box-border) !important;
+    border-radius: 4px;
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--award-bg);
+    background-image:
+        linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.05) 75%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.05) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+.treasure-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    align-content: start;
+    gap: 8px;
+    flex: 0 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 2px;
+}
+
+.treasure-pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.treasure-page-prev, .treasure-page-next {
+    flex: 1;
+    padding: 4px;
+}
+
+.treasure-page-prev.disabled, .treasure-page-next.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.treasure-empty {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--award-text-muted);
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 40px 0;
+}
+
+.treasure-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--award-card-bg);
+    border: 1px solid var(--award-box-border);
+    border-radius: 4px;
+    padding: 6px 8px;
+    min-width: 0;
+}
+
+.treasure-item-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+}
+
+.treasure-item-top:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.treasure-item-top:hover .treasure-item-name {
+    color: var(--award-accent, #d99a3f);
+}
+
+.treasure-item-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid var(--award-avatar-border);
+    flex-shrink: 0;
+}
+
+.treasure-item-name {
+    flex-grow: 1;
+    min-width: 0;
+    color: var(--award-text-bright);
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.treasure-item-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.treasure-award-btn, .treasure-remove-btn {
+    padding: 4px 6px;
+    font-size: 0.85em;
+}
+
+
+/* ========================================== */
+/* CHAT CARDS                                 */
+/* ========================================== */
+
+.award-chat-card {
+    border: 1px solid #777; 
+    border-radius: 5px; 
+    padding: 10px; 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.award-chat-header {
+    font-size: 14px; 
+    color: #444;
+}
+
+.award-chat-amount {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #2e8b57; 
+    margin: 5px 0;
+}
+
+.award-chat-total {
+    font-size: 14px; 
+    font-weight: bold; 
+    color: #222; 
+    margin-bottom: 10px;
+}
+
+.undo-luck-btn, .undo-xp-btn {
+    width: 100%; 
+    cursor: pointer;
+}
+
+/* Chat card undo/redo toggle - styled like the Status pills, orange while
+   the award still stands, red once it's been undone (click again to redo) */
+.award-undo-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid currentColor;
+    background: transparent;
+    transition: background 0.2s ease-in-out;
+}
+
+.award-undo-btn.state-awarded {
+    color: #c45b5b;
+    background: rgba(196, 91, 91, 0.12);
+}
+
+.award-undo-btn.state-awarded:hover {
+    background: rgba(196, 91, 91, 0.22);
+}
+
+.award-undo-btn.state-undone {
+    color: #6da373;
+    background: rgba(109, 163, 115, 0.12);
+}
+
+.award-undo-btn.state-undone:hover {
+    background: rgba(109, 163, 115, 0.22);
+}
+
+/* Collapsible arrow that reveals the Undo/Redo control - keeps it from
+   being clicked by accident */
+.award-undo-toggle {
+    text-align: center;
+    cursor: pointer;
+    color: #9a8e9e;
+    font-size: 0.8em;
+    padding: 4px;
+    margin-top: 4px;
+    transition: color 0.2s ease-in-out;
+}
+
+.award-undo-toggle:hover {
+    color: #ffffff;
+}
+
+.award-undo-toggle i {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.award-undo-toggle.expanded i {
+    transform: rotate(180deg);
+}
+
+.award-undo-wrapper {
+    display: none;
+    margin-top: 6px;
+}
+
+.award-flavor {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.award-flavor strong {
+    font-size: 2em;
+}
