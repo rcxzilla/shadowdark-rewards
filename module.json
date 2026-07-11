@@ -1,0 +1,68 @@
+{
+  "id": "shadowdark-rewards",
+  "title": "Shadowdark: Rewards",
+  "description": "Custom GM tools for the Shadowdark system: award XP, Luck, Treasure, and Currency to your party from a single dialog, and track everyone's active light sources at a glance. Includes undo/redo on every award, configurable quick-add buttons, sound effects, and seven color themes.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "rcxzilla",
+      "url": "https://github.com/rcxzilla"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/style.css"
+  ],
+  "languages": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowdark",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "url": "https://github.com/rcxzilla/shadowdark-rewards",
+  "manifest": "https://github.com/rcxzilla/shadowdark-rewards/releases/latest/download/module.json",
+  "download": "https://github.com/rcxzilla/shadowdark-rewards/releases/latest/download/module.zip",
+  "readme": "https://github.com/rcxzilla/shadowdark-rewards/blob/main/README.md",
+  "bugs": "https://github.com/rcxzilla/shadowdark-rewards/issues",
+  "changelog": "https://github.com/rcxzilla/shadowdark-rewards/blob/main/CHANGELOG.md",
+  "license": "https://github.com/rcxzilla/shadowdark-rewards/blob/main/LICENSE",
+  "manifestPlusVersion": "1.2.0",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://i.ibb.co/j9jh82DZ/thumbnail.png",
+      "caption": "Shadowdark: Rewards"
+    },
+    {
+      "type": "icon",
+      "url": "https://i.ibb.co/j9jh82DZ/thumbnail.png",
+      "caption": "Shadowdark: Rewards icon"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://placehold.co/1280x800?text=Rewards+Dialog+Screenshot",
+      "caption": "The Rewards dialog - XP, Luck, Treasure, and Currency in one window"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://placehold.co/1280x800?text=Light+Tracker+Screenshot",
+      "caption": "The Light Tracker keeping an eye on the party's torches"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://placehold.co/1280x800?text=Chat+Card+Screenshot",
+      "caption": "Award chat cards with collapsible Undo/Redo"
+    }
+  ],
+  "flags": {}
+}
