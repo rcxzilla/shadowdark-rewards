@@ -1,5 +1,5 @@
 // light-tracker.js
-import { getThemeClass, getLowLightThresholdSeconds, getHideLightlessDefault, playLightExpiredSound } from './settings.js';
+import { getThemeClass, getLowLightThresholdSeconds, getHideLightlessDefault, playLightExpiredSound, escapeHtml } from './settings.js';
 
 // Formats remaining seconds as a whole-minute label, e.g. "39 Minutes",
 // "1 Minute", or "<1 Minute" / "0 Minutes" for the edge cases.
@@ -204,13 +204,13 @@ export class CustomLightTracker extends Application {
                     <div class="lt-actor-panel">
                         <!-- Actor Image matching Luck/XP UI (square, dark border) -->
                         <div class="lt-actor-avatar" data-actor-id="${actor.id}">
-                            <img src="${actor.img}">
+                            <img src="${escapeHtml(actor.img)}">
                         </div>
                         
                         <!-- Actor Info -->
                         <div class="lt-actor-info">
                             <div class="lt-actor-name-row">
-                                <h3 class="lt-actor-name">${actor.name}</h3>
+                                <h3 class="lt-actor-name">${escapeHtml(actor.name)}</h3>
                                 ${nameRowTimeHtml}
                             </div>
                 `;
@@ -221,7 +221,7 @@ export class CustomLightTracker extends Application {
                             // Time already shown up on the name row - just show the light's name here
                             html += `
                                 <div class="lt-light-item">
-                                    <span class="lt-light-name"><i class="fas fa-fire"></i>${light.name}</span>
+                                    <span class="lt-light-name"><i class="fas fa-fire"></i>${escapeHtml(light.name)}</span>
                                 </div>
                             `;
                         } else {
@@ -231,7 +231,7 @@ export class CustomLightTracker extends Application {
 
                             html += `
                                 <div class="lt-light-item">
-                                    <span class="lt-light-name"><i class="fas fa-fire"></i>${light.name}</span> 
+                                    <span class="lt-light-name"><i class="fas fa-fire"></i>${escapeHtml(light.name)}</span> 
                                     <span class="lt-light-remaining${lowClass}">(${timeStr})</span>
                                 </div>
                             `;

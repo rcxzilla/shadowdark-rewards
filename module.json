@@ -2,7 +2,7 @@
   "id": "shadowdark-rewards",
   "title": "Shadowdark: Rewards",
   "description": "Custom GM tools for the Shadowdark system: award XP, Luck, Treasure, and Currency to your party from a single dialog, and track everyone's active light sources at a glance. Includes undo/redo on every award, configurable quick-add buttons, sound effects, and seven color themes.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14"

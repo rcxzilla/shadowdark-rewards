@@ -1,6 +1,22 @@
 // settings.js
 export const MODULE_ID = "shadowdark-rewards";
 
+// Escapes a value for safe interpolation into HTML (text content or a
+// quoted attribute value). Actor names, item names, and image paths are
+// ultimately player-controlled strings (a character or item can be renamed
+// to anything), so every place we drop one of these into a template literal
+// needs to run through this first - otherwise a name like
+// `<img src=x onerror=...>` would execute as real HTML in whoever's client
+// renders the dialog or chat card.
+export const escapeHtml = (value) => {
+    return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+};
+
 const THEME_CLASSES = [
     "award-theme-light", "award-theme-dark", "award-theme-blackgold",
     "award-theme-verdant", "award-theme-blood", "award-theme-arcane", "award-theme-frost"
@@ -25,7 +41,7 @@ const applyThemeToOpenWindows = (theme) => {
 
 export const registerSettings = () => {
     game.settings.register(MODULE_ID, "popupTheme", {
-        name: "Say Theme",
+        name: "Theme",
         hint: "Choose the color theme used by the Award and Light Tracker windows.",
         scope: "world",
         config: true,

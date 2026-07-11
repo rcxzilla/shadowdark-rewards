@@ -1,7 +1,7 @@
 // award.js
 // A single "Award" popup that combines Award XP, Award Luck, and a new
 // Award Treasure workflow, all behind one shared Actors selection.
-import { getThemeClass, getChatWhisperTargets, playAwardSound, getLuckRollFormulas, getTreasureBoxItems, saveTreasureBoxItems, getAwardDialogWidth, getXpAddValues, getLuckAddValues, getCurrencyAddValues } from './settings.js';
+import { getThemeClass, getChatWhisperTargets, playAwardSound, getLuckRollFormulas, getTreasureBoxItems, saveTreasureBoxItems, getAwardDialogWidth, getXpAddValues, getLuckAddValues, getCurrencyAddValues, escapeHtml } from './settings.js';
 
 let activeAwardDialog = null; // Tracks the combined Award dialog
 
@@ -118,10 +118,10 @@ const buildActorGridHtml = (actors, selectedIds) => {
         html += `
             <div class="award-actor-card${selectedClass}" data-actor-id="${actor.id}">
                 <div class="award-actor-avatar" data-actor-id="${actor.id}">
-                    <img src="${actor.img}">
+                    <img src="${escapeHtml(actor.img)}">
                 </div>
                 <div class="award-actor-info">
-                    <div class="award-actor-name">${actor.name}</div>
+                    <div class="award-actor-name">${escapeHtml(actor.name)}</div>
                     <div class="award-actor-line">
                         <span class="award-actor-value award-actor-value-xp">XP: <span class="award-actor-value-num">${xp}</span></span>
                         <span class="award-actor-value award-actor-value-luck">Luck: <span class="award-actor-value-num">${luck}</span></span>
@@ -167,7 +167,7 @@ const buildLuckChatCardHtml = ({ header, amount, newLuck, actorId }) => `
 const buildTreasureChatCardHtml = ({ name }) => `
     <div class="award-chat-card">
         <div class="award-chat-header">Treasure Discovered</div>
-        <div class="award-chat-amount">${name}</div>
+        <div class="award-chat-amount">${escapeHtml(name)}</div>
     </div>
 `;
 
@@ -192,8 +192,8 @@ const renderTreasureList = (html) => {
         listEl.append(`
             <div class="treasure-item" data-tid="${t.tid}">
                 <div class="treasure-item-top">
-                    <img src="${t.img}" class="treasure-item-img">
-                    <span class="treasure-item-name">${t.name}</span>
+                    <img src="${escapeHtml(t.img)}" class="treasure-item-img">
+                    <span class="treasure-item-name">${escapeHtml(t.name)}</span>
                 </div>
                 <div class="treasure-item-actions">
                     <div class="luck-btn btn-manual treasure-award-btn" data-tid="${t.tid}">Award</div>
@@ -657,7 +657,7 @@ export const openAwardDialog = () => {
                         activeAwardDialog.treasureItems.splice(idx, 1);
                         activeAwardDialog.lastTreasureAward = { treasure, createdIds };
                         renderTreasureList(html);
-                        ui.notifications.info(`Awarded ${treasure.name} to ${actorIds.length} actor(s).`);
+                        ui.notifications.info(`Awarded ${escapeHtml(treasure.name)} to ${actorIds.length} actor(s).`);
                     });
 
                     // Remove a single treasure item from the box without awarding it
@@ -668,7 +668,7 @@ export const openAwardDialog = () => {
 
                         const removed = activeAwardDialog.treasureItems.splice(idx, 1)[0];
                         renderTreasureList(html);
-                        ui.notifications.info(`Removed ${removed.name} from Available Treasure.`);
+                        ui.notifications.info(`Removed ${escapeHtml(removed.name)} from Available Treasure.`);
                     });
 
                     // ---- All other buttons (XP / Luck / Treasure Actions) ----
@@ -812,7 +812,7 @@ export const openAwardDialog = () => {
                             activeAwardDialog.treasureItems.push(last.treasure);
                             activeAwardDialog.lastTreasureAward = null;
                             renderTreasureList(html);
-                            ui.notifications.info(`Undid the award of ${last.treasure.name}.`);
+                            ui.notifications.info(`Undid the award of ${escapeHtml(last.treasure.name)}.`);
                         } else if (type === "treasure-reset") {
                             const count = activeAwardDialog.treasureItems.length;
                             if (count === 0) return ui.notifications.warn("No treasure to remove!");
